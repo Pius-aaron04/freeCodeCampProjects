@@ -13,7 +13,7 @@
     </p>
     <form id="survey-form">
         <fieldset>
-            <label id="name-label" for="name">Name<input id="name" placeholder="Enter your name" type="text"/></label>
+            <label id="name-label" for="name">Name<input required id="name" placeholder="Enter your name" type="text"/></label>
             <label id="email-label" for="email">Email<input id="email" placeholder="Enter your email" required type="email" /></label>
             <label id="number-label" for=" number">Age<input id="number" placeholder="Age" required type="number" min="10" max="99" /></label>
         </fieldset>
@@ -31,11 +31,28 @@
             <label class="inline" for="science"><input id="science" class="inline" type="radio" checked name="department"/> Science</label>
             <label class="inline" for="art"><input id="art" type="radio" class="inline" name="department"/> Art</label>
             <label class="inline" for="commercial"><input id="commercial" class="inline" type="radio" name="department"/> Commercial</label>
+        </fieldset>
+        <!--FeedBack-->
+        <fieldset>
+            <label for="favorite">Your favorite part of the platform :</label>
+            <select id="favorite">
+                <option>Intranet</option>
+                <option>Community</option>
+                <option>Challenges</option>
+                <option>Calendar</option>
+                <option>Curriculum</option>
+            </select>
+            <legend>What would you love to see improvement on?</legend>
+            <label for="calendar"><input class="inline" type="checkbox" id="calendar" /> The Calendar</label>
+            <label for="help-center"><input class="inline" type="checkbox" id="help-center" /> Help center</label>
+            <label for="community" ><input class="inline" type="checkbox" id="community" /> The Community</label>
+            <label for="checker"><input class="inline" type="checkbox" id="checker" /> The Checker</label>
+
             <label for="comment"> Leave a comment
                 <textarea id="comment" placeholder="write your comment here"></textarea>
             </label>
         </fieldset>
+        <input class="submit" id="submit" type="submit" value="submit"/>
     </form>
-    <input class="submit" type="submit" value="submit"/>
 </body>
 </html>
